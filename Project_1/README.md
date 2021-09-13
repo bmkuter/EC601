@@ -34,6 +34,12 @@ MVP
 
 Many resources are wasted in the process of bringing agricultural goods from where they are grown to where they are consumed. For smaller crops with shorter and grow times this process seems ridiculous. Things such as basil, Rosemary, or other herbs can readily be grown in doors locally to where they will be consumed. However in a many regions and in cities in particular available light comes in issue. On top of this of the modern world has many time requirements that put horticulture out of reach for many busy people. To correct this I propose a low-cost space efficient automated ways of growing commonly used agricultural goods within one’s own home or even apartment. 
 
+**Users**  
+There are two primary groups of users for this modular grow system: individual households, and larger-scale community farms.  
+The first target audicance...  
+
+The second target audience would be communities, akin to community gardens. Scalability through networked modules is paramount to the design. This can be expanded from several modules within one household to many modules residing inside some communal building. 
+
 **Area of focus within topic**
 
 Within the scope of this project, my main area of interest is in the actual interaction in interfacing of sensors in actuators with the micro controller for automated tasks. I am very interested in using computers to remove the human element of redundant tasks. Specifically I want to interact with the GPIO pins on my MCU to establish a cyber physical system. The primary task is to make a system that can monitor and correct for base growth conditions with the reach goal of adding image recognition to automatically set those growth conditions. 
@@ -51,5 +57,5 @@ Growing conditions, such as temperature, humidity, luminosity, water pH, and wat
 Structurally, each module will be constructed with aluminium extrusions (Makerbeam) and 3D printed components (PLA during R&D, probably Nylon during production). Foam board insulation will be used to construct walls with advantageous thermal properties, with the internal sides covered in reflective material to increase light efficiency. The entire module will need to be enclosed to prevent light pollution & preserve proper growth periods. Simple HVAC systems using cheap, efficient, readily available computer fans will be used to supply fresh air and exhaust. These fans can be driven & monitored through the Teensy 4.1 lying at the heart of each module. 
 
 **Duplicate results**
-To duplicate research on this topic I have taken sample sensors and connected them to my MCU Without consideration for the final physical enclosure nor the total number of sensors and actuators eventually needed. This was done to ensure library compatibility as well as see in general power requirements and layout for the project. 
+This project will utilise open-source libraries developed by the Arduino foundation and supplemented by libraries written by Adafruit & Sparkfun for specific sensor modules. Additionally libraries developed by Paul Stoffregen (father of Teensyduino and massive contributor to the Arduino Foundation) will be used for their incredible optisiation for the Teensy platform. To duplicate research on this topic I have taken sample sensors and connected them to my MCU without consideration for the final physical enclosure nor the total number of sensors and actuators eventually needed. This was done to ensure library compatibility as well as see in general power requirements and layout for the project. 
 
