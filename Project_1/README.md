@@ -35,8 +35,8 @@ MVP
 Many resources are wasted in the process of bringing agricultural goods from where they are grown to where they are consumed. For smaller crops with shorter and grow times this process seems ridiculous. Things such as basil, Rosemary, or other herbs can readily be grown in doors locally to where they will be consumed. However in a many regions and in cities in particular available light comes in issue. On top of this of the modern world has many time requirements that put horticulture out of reach for many busy people. To correct this I propose a low-cost space efficient automated ways of growing commonly used agricultural goods within one’s own home or even apartment. 
 
 **Users**  
-There are two primary groups of users for this modular grow system: individual households, and larger-scale community farms.  
-The first target audicance...  
+There are two primary groups of users for this modular grow system: individual households, and larger-scale community farms:  
+The first & primary audience for the device's initial conception would be individual households with either limited outdoor growing space or inclemental weather. For such users a compact, modular grow system could provide basic herbs and produce year-round. 
 
 The second target audience would be communities, akin to community gardens. Scalability through networked modules is paramount to the design. This can be expanded from several modules within one household to many modules residing inside some communal building. 
 
