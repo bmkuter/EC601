@@ -1,6 +1,6 @@
-**Benjamin Kuter**
-**Project 1**
-**Fall 2021**
+**Benjamin Kuter**  
+**Project 1**  
+**Fall 2021**  
 
 **Resources:**
 
@@ -14,7 +14,7 @@
 - https://embedded.fm/blog/2017/2/27/dma-examples
 - Garden Database: https://garden.org/plants/
 
-**Project 1**
+**Project 1**  
 User Stories  
 Consumer  
 Competition  
