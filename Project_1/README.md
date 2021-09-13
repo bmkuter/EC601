@@ -15,6 +15,12 @@
 - Garden Database: https://garden.org/plants/
 
 **Project 1**  
+Main components (from in class assignment):  
+*Get good introduction about the topic*  
+*Why is it an important topic*  
+*What are the leading approaches*  
+*Open Source materials? Can I duplicate open source results?*  
+Additional areas to touch on:  
 User Stories  
 Consumer  
 Competition  
