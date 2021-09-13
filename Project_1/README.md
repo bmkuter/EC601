@@ -13,8 +13,14 @@
 - http://l0ner.github.io/2020-08-24_teensy-the-hard-way-blink/
 - https://embedded.fm/blog/2017/2/27/dma-examples
 - Garden Database: https://garden.org/plants/
-- 
 
+**Project 1**
+User Stories
+Consumer
+Competition
+Open-Source Resources (Libraries, APIs, off-the-shelf components
+Problem Space & Solution Set (What is the issue & how can it be resolved?)
+MVP
 
 **Automated Agricultural Grow System:**
 
