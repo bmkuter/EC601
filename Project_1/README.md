@@ -15,19 +15,12 @@
 - Garden Database: https://garden.org/plants/
 
 **Project 1**
-
-User Stories
-
-Consumer
-
-Competition
-
-Open-Source Resources (Libraries, APIs, off-the-shelf components
-
-Problem Space & Solution Set (What is the issue & how can it be resolved?)
-
-MVP
-
+User Stories  
+Consumer  
+Competition  
+Open-Source Resources (Libraries, APIs, off-the-shelf components  
+Problem Space & Solution Set (What is the issue & how can it be resolved?)  
+MVP  
 
 **Automated Agricultural Grow System:**
 
