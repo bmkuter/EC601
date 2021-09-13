@@ -1,6 +1,6 @@
-**Benjamin Kuter
-**Project 1
-**Fall 2021
+**Benjamin Kuter**
+**Project 1**
+**Fall 2021**
 
 **Resources:**
 
