@@ -1,6 +1,6 @@
-**Benjamin Kuter**
-**Project 1**
-**Fall 2021**
+**Benjamin Kuter
+**Project 1
+**Fall 2021
 
 **Resources:**
 
@@ -19,11 +19,12 @@
 **Automated Agricultural Grow System:**
 
 **Problem statement**
+
 Many resources are wasted in the process of bringing agricultural goods from where they are grown to where they are consumed. For smaller crops with shorter and grow times this process seems ridiculous. Things such as basil, Rosemary, or other herbs can readily be grown in doors locally to where they will be consumed. However in a many regions and in cities in particular available light comes in issue. On top of this of the modern world has many time requirements that put horticulture out of reach for many busy people. To correct this I propose a low-cost space efficient automated ways of growing commonly used agricultural goods within one’s own home or even apartment. 
 
 **Area of focus within topic**
-Within the scope of this project, my main area of interest is in the actual interaction in interfacing of sensors in actuators with the micro controller for automated tasks. I am very interested in using computers to remove the human element of redundant tasks. Specifically I want to interact with the GPIO pins on my MCU to establish a cyber physical system. The primary task is to make a system that can monitor and correct for base growth conditions with the reach goal of adding image recognition to automatically set those growth conditions. 
 
+Within the scope of this project, my main area of interest is in the actual interaction in interfacing of sensors in actuators with the micro controller for automated tasks. I am very interested in using computers to remove the human element of redundant tasks. Specifically I want to interact with the GPIO pins on my MCU to establish a cyber physical system. The primary task is to make a system that can monitor and correct for base growth conditions with the reach goal of adding image recognition to automatically set those growth conditions. 
 
 This project stems from my interests in sustainability through food localization, optimisation, and automation. I am considering off the shelf components for easier open sourcing and to minimise replicated work. I am interested in making products and open-source devices that are easy to DIY using readily available parts. It will be developed on a Teensy 4.1 running an ARM Cortex M7 @ 1.008 GHz. This board is programmable on the Arduino framework, but has many highly optimized native libraries (termed Teensyduino). Direct bare-metal programming is also available if/when needed, leveraging the full power of the fastest member of the ARM Cortex-M processor family. Building upon the Arduino framework additionally allows for many pre existing components to be readily deployed in the system. 
 
