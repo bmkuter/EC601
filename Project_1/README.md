@@ -50,9 +50,9 @@ The second target audience would be communities, akin to community gardens. Scal
 
 **User Stories**
 
--*As an apartment user, I want to be able to grow my own herbs in my basement apartment that has limited lighting.*  
--*As a household user in northern Minnesota, I want to have fresh tomatoes, lettuce, & other produce for my family readily available.*  
--*As a community manager, I want to supply my coop with low-cost exotic produce that normally can't be found locally, or is normally prohibitavely expensive.*  
+-As an apartment user, I want to be able to grow my own herbs in my basement apartment that has limited lighting.
+-As a household user in northern Minnesota, I want to have fresh tomatoes, lettuce, & other produce for my family readily available.*
+-*As a community manager, I want to supply my coop with low-cost exotic produce that normally can't be found locally, or is normally prohibitavely expensive.*
 -
 
 **Technical Approach & Previous Implementations**
