@@ -53,9 +53,7 @@ The second target audience would be communities, akin to community gardens. Scal
 -As a household user in northern Minnesota, I want to have fresh tomatoes, lettuce, & other produce for my family readily available.  
 -As a community manager, I want to supply my coop with low-cost exotic produce that normally can't be found locally, or is normally prohibitavely expensive.  
 
-
 **Technical Approach & Previous Implementations**
-
 The current design would be modular grow chambers which make up the grow system, which can act independently if needed. Modular units could be grouped, and each follower would be able to communicate with a central leader via ethernet or other local networking. 
 
 A literature review of previous attempts at smart grow systems reveals the types of sensors typically needed as well as specific model numbers for the parts. These are typically well integrated into the Arduino environment and include things such as relays, lights, water sensors, humidity sensors, and temperature probes. most reviewed Arduino based projects that are limited in their processing powers because of the ATmega328P 8 bit architecture. The proposed MCU for my own project is instead based off of the current arm cortex M7 processor line which will afford me far more computational power, enabling more complicated tasks such as image recognition. 
