@@ -48,12 +48,11 @@ The first & primary audience for the device's initial conception would be indivi
 
 The second target audience would be communities, akin to community gardens. Scalability through networked modules is inherent to the initial design. This scalability can be increased from several modules within one household to many modules residing inside some communal building. As renewable infastructures become more common place (fingers-crossed), this system could be readily adjusted to using said renewable resources for power.  
 
-**User Stories**
+**User Stories**  
+-As an apartment user, I want to be able to grow my own herbs in my basement apartment that has limited lighting.  
+-As a household user in northern Minnesota, I want to have fresh tomatoes, lettuce, & other produce for my family readily available.  
+-As a community manager, I want to supply my coop with low-cost exotic produce that normally can't be found locally, or is normally prohibitavely expensive.  
 
--As an apartment user, I want to be able to grow my own herbs in my basement apartment that has limited lighting.
--As a household user in northern Minnesota, I want to have fresh tomatoes, lettuce, & other produce for my family readily available.*
--*As a community manager, I want to supply my coop with low-cost exotic produce that normally can't be found locally, or is normally prohibitavely expensive.*
--
 
 **Technical Approach & Previous Implementations**
 
