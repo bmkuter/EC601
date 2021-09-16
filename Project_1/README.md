@@ -16,7 +16,7 @@
 
 
   
-**Problem statement**
+#**Problem statement**
 
 Many resources are wasted in the process of bringing agricultural goods from where they are grown to where they are consumed. For smaller crops with shorter and grow times this process seems ridiculous. Things such as basil, Rosemary, or other herbs can readily be grown in doors locally to where they will be consumed. However in a many regions and in cities in particular available light comes in issue. On top of this of the modern world has many time requirements that put horticulture out of reach for many busy people. I think it is unfortunate that much of my produce, such as tomatoes, herbs, etc,  are shipped from around the country when I can produce them much fresher in my own abode. This has the added benefit of reducing carbon emmisions produced by the transportation process, as well as increasing national agricultural biodevirsity. The system would be able to automaticallyself-regulate grow conditions (lighting intensity by grow period, water pH, feed schedules). I propose a low-cost, space-efficient, automated device for growing commonly used agricultural goods within one’s own home or even apartment. 
 
@@ -24,13 +24,13 @@ This project stems from my interests in sustainability through food localization
 
 
   
-**Area of focus within topic**
+##**Area of focus within topic**
 
 Within the scope of this project, my main area of interest is in the actual interaction in interfacing of sensors in actuators with the micro controller for automated tasks. I am very interested in using computers to remove the human element of redundant tasks. Specifically I want to interact with the GPIO pins on my MCU to establish a cyber physical system. The primary task is to make a system that can monitor and correct for base growth conditions with a stretch goal of adding image recognition to automatically set those growth conditions, most likely via TensorFlow Lite for Microcontrollers and open source plant databases such the Pl@ntNet dataset.  
 
 
   
-**Users**  
+###**Users**  
 
 There are two primary groups of users for this modular grow system: individual households, and larger-scale community farms:  
 The first & primary audience for the device's initial conception would be individual households with either limited outdoor growing space or inclemental weather. This group can be further subdivided into limited space users, such as those living in apartments, and those with larges spaces like homes but with poor growing conditions. For such users a compact, modular grow system could provide basic herbs and produce year-round. 
