@@ -2,20 +2,6 @@
 **Project 1**  
 **Fall 2021**  
 
-**Project 1**  
-Main components (from in class assignment):  
-*Get good introduction about the topic*  
-*Why is it an important topic*  
-*What are the leading approaches*  
-*Open Source materials? Can I duplicate open source results?*  
-Additional areas to touch on:  
-User Stories  
-Consumer  
-Competition  
-Open-Source Resources (Libraries, APIs, off-the-shelf components  
-Problem Space & Solution Set (What is the issue & how can it be resolved?)  
-MVP  
-
 **Automated Agricultural Grow System:**
 
 *Table of Contents*  
