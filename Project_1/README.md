@@ -24,13 +24,13 @@ This project stems from my interests in sustainability through food localization
 
 
   
-##**Area of focus within topic**
+<h3>Area of focus within topic</h3>
 
 Within the scope of this project, my main area of interest is in the actual interaction in interfacing of sensors in actuators with the micro controller for automated tasks. I am very interested in using computers to remove the human element of redundant tasks. Specifically I want to interact with the GPIO pins on my MCU to establish a cyber physical system. The primary task is to make a system that can monitor and correct for base growth conditions with a stretch goal of adding image recognition to automatically set those growth conditions, most likely via TensorFlow Lite for Microcontrollers and open source plant databases such the Pl@ntNet dataset.  
 
 
   
-###**Users**  
+<h3>Users</h3>   
 
 There are two primary groups of users for this modular grow system: individual households, and larger-scale community farms:  
 The first & primary audience for the device's initial conception would be individual households with either limited outdoor growing space or inclemental weather. This group can be further subdivided into limited space users, such as those living in apartments, and those with larges spaces like homes but with poor growing conditions. For such users a compact, modular grow system could provide basic herbs and produce year-round. 
@@ -39,7 +39,7 @@ The second target audience would be communities, akin to community gardens. Scal
 
 
   
-**User Stories**  
+<h3>User Stories</h3>  
 
 -As an apartment user, I want to be able to grow my own herbs in my basement apartment that has limited lighting.  
 -As a household user in northern Minnesota, I want to have fresh tomatoes, lettuce, & other produce for my family readily available.  
@@ -47,7 +47,7 @@ The second target audience would be communities, akin to community gardens. Scal
 
 
   
-**Open Source Resources** 
+<h3>Open Source Resources</h3> 
 
 Arduino itself is licensed under GNU General Public License Version 2, which allows for commercial development and use<sup>10</sup>. According to Paul Stoffregen of Teensy, the Teensy board itself is closed source but usable in commercial projects without any additional licensing fees<sup>11</sup>. The Teensyduino code itself is open source, primarily under the MIT license<sup>11</sup>. Specific modules and components to be used are still under investigation, but preliminary research into products through Adafruit seem to be under the BSD License, which imposes minimal restrictions on the use and distribution of the specified libraries<sup>12</sup>. 
 
@@ -55,13 +55,13 @@ The image-recognition portion of the project will probably utilise the open-sour
 
 
   
-**Duplicate results**
+<h3>Duplicate results</h3>
 
 This project will utilise open-source libraries developed by the Arduino foundation and supplemented by libraries written by Adafruit & Sparkfun for specific sensor modules. Additionally libraries developed by Paul Stoffregen (father of Teensyduino and massive contributor to the Arduino Foundation) will be used for their incredible optisiation for the Teensy platform. To duplicate research on this topic I have taken sample sensors and connected them to my MCU without consideration for the final physical enclosure nor the total number of sensors and actuators eventually needed. This was done to ensure library compatibility as well as see in general power requirements and layout for the project. To learn the requisite libraries, I will examine demo codes provided through each libraries GitHub. These will be referenced when used with all appropriate licesnse attached to the final repositary. 
 
 
   
-**Technical Approach & Previous Implementations**
+<h3>Technical Approach & Previous Implementations</h3>
 
 The current design would be modular grow chambers which make up the grow system, which can act independently if needed. Modular units could be grouped, and each follower would be able to communicate with a central leader via ethernet or other local networking. 
 
@@ -73,7 +73,7 @@ Structurally, each module will be constructed with aluminium extrusions (Makerbe
 
 
   
-**Resources:**
+<h3>Resources:</h3>
 
 1. https://www.stupid-projects.com/tensorflow-2-1-0-for-microcontrollers-benchmarks-on-teensy-4-0/
 2. https://journals.sagepub.com/doi/full/10.1177/1178622121995819
