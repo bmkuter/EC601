@@ -46,6 +46,8 @@ The second target audience would be communities, akin to community gardens. Scal
 
 Arduino itself is licensed under GNU General Public License Version 2, which allows for commercial development and use<sup>10</sup>. According to Paul Stoffregen of Teensy, the Teensy board itself is closed source but usable in commercial projects without any additional licensing fees<sup>11</sup>. The Teensyduino code itself is open source, primarily under the MIT license<sup>11</sup>. Specific modules and components to be used are still under investigation, but preliminary research into products through Adafruit seem to be under the BSD License, which imposes minimal restrictions on the use and distribution of the specified libraries<sup>12</sup>. 
 
+The image-recognition portion of the project will probably utilise the open-source plant database Pl@ntNet<sup>9</sup>. According to their GitLab page there is no license, but further work is needed to see if commercial use is permitted. They have published an API allowing up to 500 identification requests per day<sup>13</sup> which may be utilised, but more research is needed to verify this use. 
+
 
 **Duplicate results**
 
@@ -77,4 +79,5 @@ Structurally, each module will be constructed with aluminium extrusions (Makerbe
 10. https://github.com/arduino/Arduino/blob/master/license.txt
 11. https://forum.pjrc.com/threads/47851-Doing-business?p=159647&viewfull=1#post159647, post 4
 12. https://github.com/adafruit/Adafruit_VEML7700/blob/master/license.txt
+13. https://my.plantnet.org/usage
 
