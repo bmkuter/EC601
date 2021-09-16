@@ -2,20 +2,6 @@
 **Project 1**  
 **Fall 2021**  
 
-**Resources:**
-
-
-- https://www.stupid-projects.com/tensorflow-2-1-0-for-microcontrollers-benchmarks-on-teensy-4-0/
-- https://journals.sagepub.com/doi/full/10.1177/1178622121995819
-- https://towardsdatascience.com/plant-ai-plant-disease-detection-using-convolutional-neural-network-9b58a96f2289
-- https://forum.pjrc.com/threads/57433-Teensy-4-0-Image-Classification-w-CMSIS-NN
-- https://www.tensorflow.org/lite/microcontrollers/get_started_low_level
-- http://l0ner.github.io/2020-08-24_teensy-the-hard-way-blink/
-- https://embedded.fm/blog/2017/2/27/dma-examples
-- Garden Database: https://garden.org/plants/
-- Garden Database: https://plantnet.org/en/2021/03/30/a-plntnet-dataset-for-machine-learning-researchers/
-- 
-
 **Project 1**  
 Main components (from in class assignment):  
 *Get good introduction about the topic*  
@@ -31,6 +17,16 @@ Problem Space & Solution Set (What is the issue & how can it be resolved?)
 MVP  
 
 **Automated Agricultural Grow System:**
+
+*Table of Contents*  
+- Problem Statement  
+- Area of focus within topic  
+- Users  
+- User Stories  
+- Open Source Resources  
+- Previous Implementations  
+- Preliminary Technical Approach
+- Duplicating Results
 
 **Problem statement**
 
@@ -53,6 +49,12 @@ The second target audience would be communities, akin to community gardens. Scal
 -As a household user in northern Minnesota, I want to have fresh tomatoes, lettuce, & other produce for my family readily available.  
 -As a community manager, I want to supply my coop with low-cost exotic produce that normally can't be found locally, or is normally prohibitavely expensive.  
 
+**Open Source Resources** 
+Arduino itself is licensed under GNU General Public License Version 2, which allows for commercial development and use<sup>10</sup>. According to Paul Stoffregen of Teensy, the Teensy board itself is closed source but usable in commercial projects without any additional licensing fees<sup>11</sup>. The Teensyduino code itself is open source, primarily under the MIT license<sup>11</sup>. Specific modules and components to be used are still under investigation, but preliminary research into products through Adafruit seem to be under the BSD License, which imposes minimal restrictions on the use and distribution of the specified libraries<sup>12</sup>. 
+
+**Duplicate results**
+This project will utilise open-source libraries developed by the Arduino foundation and supplemented by libraries written by Adafruit & Sparkfun for specific sensor modules. Additionally libraries developed by Paul Stoffregen (father of Teensyduino and massive contributor to the Arduino Foundation) will be used for their incredible optisiation for the Teensy platform. To duplicate research on this topic I have taken sample sensors and connected them to my MCU without consideration for the final physical enclosure nor the total number of sensors and actuators eventually needed. This was done to ensure library compatibility as well as see in general power requirements and layout for the project. To learn the requisite libraries, I will examine demo codes provided through each libraries GitHub. These will be referenced when used with all appropriate licesnse attached to the final repositary. 
+
 **Technical Approach & Previous Implementations**
 The current design would be modular grow chambers which make up the grow system, which can act independently if needed. Modular units could be grouped, and each follower would be able to communicate with a central leader via ethernet or other local networking. 
 
@@ -62,6 +64,18 @@ Growing conditions, such as temperature, humidity, luminosity, water pH, and wat
 
 Structurally, each module will be constructed with aluminium extrusions (Makerbeam) and 3D printed components (PLA during R&D, probably Nylon during production). Foam board insulation will be used to construct walls with advantageous thermal properties, with the internal sides covered in reflective material to increase light efficiency. The entire module will need to be enclosed to prevent light pollution & preserve proper growth periods. Simple HVAC systems using cheap, efficient, readily available computer fans will be used to supply fresh air and exhaust. These fans can be driven & monitored through the Teensy 4.1 lying at the heart of each module. 
 
-**Duplicate results**
-This project will utilise open-source libraries developed by the Arduino foundation and supplemented by libraries written by Adafruit & Sparkfun for specific sensor modules. Additionally libraries developed by Paul Stoffregen (father of Teensyduino and massive contributor to the Arduino Foundation) will be used for their incredible optisiation for the Teensy platform. To duplicate research on this topic I have taken sample sensors and connected them to my MCU without consideration for the final physical enclosure nor the total number of sensors and actuators eventually needed. This was done to ensure library compatibility as well as see in general power requirements and layout for the project. 
+**Resources:**
+
+1. https://www.stupid-projects.com/tensorflow-2-1-0-for-microcontrollers-benchmarks-on-teensy-4-0/
+2. https://journals.sagepub.com/doi/full/10.1177/1178622121995819
+3. https://towardsdatascience.com/plant-ai-plant-disease-detection-using-convolutional-neural-network-9b58a96f2289
+4. https://forum.pjrc.com/threads/57433-Teensy-4-0-Image-Classification-w-CMSIS-NN
+5. https://www.tensorflow.org/lite/microcontrollers/get_started_low_level
+6. http://l0ner.github.io/2020-08-24_teensy-the-hard-way-blink/
+7. https://embedded.fm/blog/2017/2/27/dma-examples
+8. Garden Database: https://garden.org/plants/
+9. Garden Database: https://plantnet.org/en/2021/03/30/a-plntnet-dataset-for-machine-learning-researchers/
+10. https://github.com/arduino/Arduino/blob/master/license.txt
+11. https://forum.pjrc.com/threads/47851-Doing-business?p=159647&viewfull=1#post159647, post 4
+12. https://github.com/adafruit/Adafruit_VEML7700/blob/master/license.txt
 
