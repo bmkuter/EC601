@@ -4,7 +4,7 @@
 
 <h1>Automated Agricultural Grow System:</h1>
 
-*<h3>Table of Contents</h3>*  
+*<h3>Table of Contents</h3>*
 - Problem Statement  
 - Area of focus within topic  
 - Users  
