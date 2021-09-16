@@ -2,9 +2,9 @@
 **Project 1**  
 **Fall 2021**  
 
-<h1>**Automated Agricultural Grow System:**</h1>
+<h1>Automated Agricultural Grow System:</h1>
 
-<h3>*Table of Contents*</h3>  
+*<h3>Table of Contents</h3>*  
 - Problem Statement  
 - Area of focus within topic  
 - Users  
@@ -16,7 +16,7 @@
 
 
   
-<h3>**Problem statement**</h3>
+<h3>Problem statement</h3>
 
 Many resources are wasted in the process of bringing agricultural goods from where they are grown to where they are consumed. For smaller crops with shorter and grow times this process seems ridiculous. Things such as basil, Rosemary, or other herbs can readily be grown in doors locally to where they will be consumed. However in a many regions and in cities in particular available light comes in issue. On top of this of the modern world has many time requirements that put horticulture out of reach for many busy people. I think it is unfortunate that much of my produce, such as tomatoes, herbs, etc,  are shipped from around the country when I can produce them much fresher in my own abode. This has the added benefit of reducing carbon emmisions produced by the transportation process, as well as increasing national agricultural biodevirsity. The system would be able to automaticallyself-regulate grow conditions (lighting intensity by grow period, water pH, feed schedules). I propose a low-cost, space-efficient, automated device for growing commonly used agricultural goods within one’s own home or even apartment. 
 
