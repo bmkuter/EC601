@@ -14,7 +14,6 @@
 - Preliminary Technical Approach
 - Duplicating Results
 
-Test Push
 
 <h3>Problem statement</h3>
 
