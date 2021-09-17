@@ -40,27 +40,15 @@ An indirect user would be the hydroponic nutrient providers, as the system would
 
 <h3>User Stories</h3>  
 
-<<<<<<< HEAD
 -As an apartment user, I want to be able to grow my own herbs in my basement apartment that has limited lighting.
 -As a household user in northern Minnesota, I want to have fresh tomatoes, lettuce, & other produce for my family readily available.
 -As a community manager, I want to supply my coop with low-cost exotic produce that normally can't be found locally, or is normally prohibitively expensive.
 -As someone without a green thumb, I want a device that I will reliably grow produce without my intervention.
 -As someone with a variety of tastes, I want a modular system that can expand to fit my personal needs. -As someone already with a garden, I want something simple and small to supplement my garden that can grow more specialised produce.
 -As a DIY'er, I want something I can make and understand with off-the-shelf components.
--As a health nut, I want a sytem that allows me to control exactly what goes into my body and how it grows.
+-As a health nut, I want a system that allows me to control exactly what goes into my body and how it grows.
 -As an environmentalist, I want something that is efficient and green.
 
-=======
--As an apartment user, I want to be able to grow my own herbs in my basement apartment that has limited lighting.  
--As a household user in northern Minnesota, I want to have fresh tomatoes, lettuce, & other produce for my family readily available.  
--As a community manager, I want to supply my coop with low-cost exotic produce that normally can't be found locally, or is normally prohibitively expensive.  
--As someone without a green thumb, I want a device that I will reliably grow produce without my intervention.  
--As someone with a variety of tastes, I want a modular system that can expand to fit my personal needs.
--As someone already with a garden, I want something simple and small to supplement my garden that can grow more specialised produce.  
--As a DIY'er, I want something I can make and understand with off-the-shelf components.   
--As a health nut, I want a sytem that allows me to control exactly what goes into my body and how it grows.  
--As an environmentalist, I want something that is efficient and green. 
->>>>>>> f1fa9489dee32c3b8e821e3e73b8379c0865a3cc
 
 
 <h3>Open Source Resources</h3>
