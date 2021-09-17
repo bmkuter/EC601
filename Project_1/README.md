@@ -47,7 +47,7 @@ An indirect user would be the hydroponic nutrient providers, as the system would
 -As someone with a variety of tastes, I want a modular system that can expand to fit my personal needs.
 -As someone already with a garden, I want something simple and small to supplement my garden that can grow more specialised produce.  
 -As a DIY'er, I want something I can make and understand with off-the-shelf components.   
--As a health nut, I want a sytem that allows me to control exactly what goes into my body and how it grows.  
+-As a health nut, I want a system that allows me to control exactly what goes into my body and how it grows.  
 -As an environmentalist, I want something that is efficient and green. 
 
 
