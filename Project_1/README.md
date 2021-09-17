@@ -48,7 +48,7 @@ An indirect user would be the hydroponic nutrient providers, as the system would
 -As a DIY'er, I want something I can make and understand with off-the-shelf components.  
 -As a health nut, I want a system that allows me to control exactly what goes into my body and how it grows.  
 -As an environmentalist, I want something that is efficient and green.  
-
+-As a User, I want to easily read and adjust all the relevant information on a good UI. 
 
 
 <h3>Open Source Resources</h3>
