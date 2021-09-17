@@ -43,7 +43,12 @@ The second target audience would be communities, akin to community gardens. Scal
 -As an apartment user, I want to be able to grow my own herbs in my basement apartment that has limited lighting.  
 -As a household user in northern Minnesota, I want to have fresh tomatoes, lettuce, & other produce for my family readily available.  
 -As a community manager, I want to supply my coop with low-cost exotic produce that normally can't be found locally, or is normally prohibitively expensive.  
-
+-As someone without a green thumb, I want a device that I will reliably grow produce without my intervention.  
+-As someone with a variety of tastes, I want a modular system that can expand to fit my personal needs.
+-As someone already with a garden, I want something simple and small to supplement my garden that can grow more specialised produce.  
+-As a DIY'er, I want something I can make and understand with off-the-shelf components.   
+-As a health nut, I want a sytem that allows me to control exactly what goes into my body and how it grows.  
+-As an environmentalist, I want something that is efficient and green. 
 
 
 <h3>Open Source Resources</h3>
