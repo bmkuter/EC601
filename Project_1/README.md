@@ -63,6 +63,8 @@ The image-recognition portion of the project will probably utilise the open-sour
 
 This project will utilise open-source libraries developed by the Arduino foundation and supplemented by libraries written by Adafruit & Sparkfun for specific sensor modules. Additionally libraries developed by Paul Stoffregen (father of Teensyduino and massive contributor to the Arduino Foundation) will be used for their incredible optisiation for the Teensy platform. To duplicate research on this topic I have taken sample sensors and connected them to my MCU without consideration for the final physical enclosure nor the total number of sensors and actuators eventually needed. This was done to ensure library compatibility as well as see in general power requirements and layout for the project. To learn the requisite libraries, I will examine demo codes provided through each libraries GitHub. These will be referenced when used with all appropriate licenses attached to the final repository.
 
+Similar grow systems exist, but typically only have sensors which announce to the user when some parameter exceeds a threshold. Few are closed systems which can monitor and when needed adjust parameters. 
+
 
 
 <h3>Technical Approach & Previous Implementations</h3>
