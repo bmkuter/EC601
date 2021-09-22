@@ -23,12 +23,12 @@ These are needed to open & close the drainage connections to each hydroponics un
 *Link:  Product TBD*  
 
 <h2>Peristaltic Liquid Pump</h2>
-These will be used to safely (*following food safety regulations*) pump water from either the water reservoir to a module's hydroponics, or from the nutrient supply to the hydroponics chamber.  
+These will be used to safely (*following food safety regulations*) pump water from either the water reservoir to a module's hydroponics, or from the nutrient supply to the hydroponics chamber.    
 *Link:  https://smile.amazon.com/gp/product/B01IUVHB8E/ref=ox_sc_saved_title_9?smid=A34K5WF5Z9R33P&psc=1*  
 *Link: https://smile.amazon.com/gp/product/B08H1ZD5VZ/ref=ox_sc_saved_image_4?smid=A34K5WF5Z9R33P&psc=1*
 
 <h2>Relays</h2>  
-Numerous devices use 12v power, so a relay is needed to control these higher voltage devices.  
+Numerous devices use 12v power, so a relay is needed to control these higher voltage devices.    
 *Link:  https://smile.amazon.com/gp/product/B00KTELP3I/ref=ox_sc_saved_title_7?smid=A28RI4FXFS5SV8&psc=1*  
 
 <h2>Grow Lights</h2>  
