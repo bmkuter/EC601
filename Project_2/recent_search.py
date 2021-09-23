@@ -7,7 +7,7 @@ import json
 bearer_token = os.environ.get("BEARER_TOKEN")
 
 #Parameters
-start_time = "2021-09-22T00:17:22.000Z"
+start_time = "2021-09-01T00:00:00.040Z"
 end_time = "2021-03-31T00:00:00.000Z"
 max_results = 10
 
@@ -15,12 +15,13 @@ search_url = "https://api.twitter.com/2/tweets/search/recent"
 
 # Optional params: start_time,end_time,since_id,until_id,max_results,next_token,
 # expansions,tweet.fields,media.fields,poll.fields,place.fields,user.fields
-query_params = {'query': 'Boston Beer Fall ',
+query_params = {'query': 'Boston AND Beer AND Fall ',
                 'start_time':start_time,
                 'max_results': max_results,
                 'tweet.fields': 'geo',
-                'expansions': 'geo.place_id',
-                'user.fields':'location'
+                'place':'boston'
+                #'expansions': 'geo.place_id',
+                #'user.fields':'location'
                 }
 
 
