@@ -7,31 +7,65 @@ import csv
 # Imports the Google Cloud client library
 # https://cloud.google.com/natural-language/docs/reference/libraries#cloud-console
 from google.cloud import language_v1
+#For UI generation: https://formulae.brew.sh/formula/python-tk@3.9
+import tkinter as tk
 
 # To set your environment variables in your terminal run the following line:
 # export 'BEARER_TOKEN'='<your_bearer_token>'
 bearer_token = os.environ.get("BEARER_TOKEN")
 
+
+
 #Parameters
+sentiment_score = 0
+sentiment_magnitude = 0.1
 start_time = "2021-09-26T00:00:00.040Z"
 end_time = "2021-03-31T00:00:00.000Z"
-max_results = 25
-keyword = "(#beer OR #brewery OR #craftbeer) (Boston OR Somerville OR Cambridge) lang:en -is:retweet"
-example_text = "Hello World!"
+max_results = 10
+keyword ='''
+("Distraction Brewing Company" OR
+"Democracy Brewing" OR
+"Turtle Swamp Brewing" OR
+"Dorchester Brewing Company" OR
+"Aeronaut Brewery" OR
+"Winter Hill Brewing" OR
+"Jack’s Abby" OR
+"Cambridge Brewing Company" OR
+"Harpoon Brewery" OR
+"Night Shift Brewing" OR
+"Trillium Brewing Company"
+"Downeast Cider" OR
+"Artifact Cider"
+)
+lang:en
+(is:retweet OR -is:retweet)
+'''
 
 search_url = "https://api.twitter.com/2/tweets/search/recent"
 
 # Optional params: start_time,end_time,since_id,until_id,max_results,next_token,
 # expansions,tweet.fields,media.fields,poll.fields,place.fields,user.fields
 query_params = {'query': keyword,
-                'start_time':start_time,
                 'max_results': max_results,
                 }
 
 # Instantiates a client
 client = language_v1.LanguageServiceClient()
 
+# Function to sort the list of tuples by its second item
+def Sort_Tuple(tup):
+    # Taken from: https://www.geeksforgeeks.org/python-program-to-sort-a-list-of-tuples-by-second-item/
+    # Modified to invert sort order.
+    # getting length of list of tuples
+    lst = len(tup)
+    for i in range(0, lst):
 
+        for j in range(0, lst-i-1):
+            if (tup[j][1] < tup[j + 1][1]):
+                temp = tup[j]
+                tup[j]= tup[j + 1]
+                tup[j + 1]= temp
+    return tup
 
 def bearer_oauth(r):
     """
@@ -55,24 +89,34 @@ def main():
 
     df = pd.DataFrame(json_response['data'])
     df.to_csv('response_python.csv')
-
-    #print(json.dumps(json_response, indent=4, sort_keys=True))
-
     df = pd.read_csv('response_python.csv')
     saved_column = df.text
 
+    output_breweries_list = []
+
     #For each text in the csv, perform sentiment analysis
-    print("\n\n\n\n\n\n")   #Formatting
+    print("\n\n\n\n")   #Formatting
     for i in saved_column:
         #Google Natural Language Section
         document = language_v1.Document(content=i, type_=language_v1.Document.Type.PLAIN_TEXT)
         sentiment = client.analyze_sentiment(request={'document': document}).document_sentiment
-        #Only Print if sentiment score is good, i.e. above 0.5?
-        if (sentiment.score >= .3) & (sentiment.magnitude > 1):
-            print("Text: {}".format(i))
-            print("Sentiment: Score {}, Magnitude {}".format(sentiment.score, sentiment.magnitude))
-            print("\n\n\n\n\n\n")
+        #Only Print if sentiment score is above some threshold?
+        if (sentiment.score >= sentiment_score) & (sentiment.magnitude > sentiment_magnitude):
+            output_breweries_list.append(tuple((i,sentiment.score,sentiment.magnitude)))
+            #print("Text: {}".format(i))
+            #print("Sentiment: Score {}, Magnitude {}".format(sentiment.score, sentiment.magnitude))
+            #print("\n\n\n\n")
+    sorted_breweries_list = Sort_Tuple(output_breweries_list)
+    
+    for x in sorted_breweries_list:
+        print(x)
 
+    #print("({})".format(", ".join(Sort_Tuple(output_breweries_list))))
+    #GUI Business
+    window = tk.Tk()
+    greeting = tk.Label(text="Hello, Tkinter")
+    greeting.pack()
+    window.mainloop()
 
 if __name__ == "__main__":
     main()
