@@ -19,3 +19,7 @@ After adding Google NLP API, the program now takes the text found for each tweet
 Results are mixed, with results ranging from farmers markets to calls for political action. To fix this, as the goal of the project is to find beer releases, I have hardcoded breweries. This theoretically makes it harder to find new releases, but also curated lists have their benefits. I have also removed the retweet filter, once more enabling retweets. My thinking is that these could help lead to discovery through sentiment analysis.
 
 To return the results to the user, a simple GUI is being created through Tkinter. These results will be ordered through a tuple-list sorting function found on geeksforgeeks, which was slightly altered to invert the search order.
+
+After sorting, the username is paired with the user_id through a dictionary and original query parameters. This information, as well as the various scores and original text, are packed into a tuple. This is then printed through to my simple gui.
+
+I decided it would be good to add a hyperlink back to the original tweet. To do this, I created another list for the original tweet IDs from the JSON, and appended these to the tuple for each tweet. I then created a generic twitter url ("http://www.twitter.com/anyuser/status/{}".format(x[4])) that would take each ID and format into the proper URL. I then used a tkinter-related function found on tutorialspoint to insert hyperlinks into text fields instead of labels. 
