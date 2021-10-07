@@ -23,3 +23,5 @@ To return the results to the user, a simple GUI is being created through Tkinter
 After sorting, the username is paired with the user_id through a dictionary and original query parameters. This information, as well as the various scores and original text, are packed into a tuple. This is then printed through to my simple gui.
 
 I decided it would be good to add a hyperlink back to the original tweet. To do this, I created another list for the original tweet IDs from the JSON, and appended these to the tuple for each tweet. I then created a generic twitter url ("http://www.twitter.com/anyuser/status/{}".format(x[4])) that would take each ID and format into the proper URL. I then used a tkinter-related function found on [tutorialspoint](https://www.tutorialspoint.com/how-to-create-hyperlink-in-a-tkinter-text-widget) to insert hyperlinks into text fields instead of labels. 
+
+Optimisations can be made in the search-algorithms used for this project. I have not yet studied algorithms and was more interested in communicating with the various APIs. With O(n^2) the sort used to sort the tuples is pretty slow. 
