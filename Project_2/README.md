@@ -16,7 +16,7 @@ To prepare for adding Google's NLP, I changed the name of my aforementioned samp
 
 After adding Google NLP API, the program now takes the text found for each tweet and saves to CSV (which acts as a way to format data into an easier format than JSON). This formatted text is then fed back into the program. Sentiment analysis is performed on each, and the analysis returned along with the original text. The tweet is only printed if generally positive (sentiment score >= .3) and the magnitude is greater than 1 (used to filter out spam messages and really lazy ads).
 
-Results are mixed, with results ranging from farmers markets to calls for political action. To fix this, as the goal of the project is to find beer releases, I have hardcoded breweries. This theoretically makes it harder to find new releases, but also curated lists have their benefits. I have also removed the retweet filter, once more enabling retweets. My thinking is that these could help lead to discovery through sentiment analysis.
+Results are mixed, with tweets ranging from farmers markets to calls for political action. To fix this, as the goal of the project is to find beer releases, I have hardcoded breweries. This theoretically makes it harder to find new releases, but also curated lists have their benefits. I have also removed the retweet filter, once more enabling retweets. My thinking is that these could help lead to discovery through sentiment analysis.
 
 To return the results to the user, a simple GUI is being created through Tkinter. These results will be ordered through a tuple-list sorting function found on geeksforgeeks, which was slightly altered to invert the search order.
 
