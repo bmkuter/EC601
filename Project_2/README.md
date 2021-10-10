@@ -25,3 +25,5 @@ After sorting, the username is paired with the user_id through a dictionary and 
 I decided it would be good to add a hyperlink back to the original tweet. To do this, I created another list for the original tweet IDs from the JSON, and appended these to the tuple for each tweet. I then created a generic twitter url ("http://www.twitter.com/anyuser/status/{}".format(x[4])) that would take each ID and format into the proper URL. I then used a tkinter-related function found on [tutorialspoint](https://www.tutorialspoint.com/how-to-create-hyperlink-in-a-tkinter-text-widget) to insert hyperlinks into text fields instead of labels. 
 
 Optimisations can be made in the search-algorithms used for this project. I have not yet studied algorithms and was more interested in communicating with the various APIs. With O(n^2) the sort used to sort the tuples is pretty slow. 
+
+When running the code, one must set environment variables for Google Natural Language and for the Twitter API. This can be done for the Twitter API through line 19 of boston_beer.py, and through this [link](https://cloud.google.com/functions/docs/configuring/env-var) for Google's NLP. 
