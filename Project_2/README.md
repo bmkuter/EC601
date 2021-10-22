@@ -2,7 +2,7 @@
 **Project 2**  
 **EC601 - Fall 2021**  
 
-
+**Use Boston_Beer.py**
 
 
 **Phase 1(a):**  
