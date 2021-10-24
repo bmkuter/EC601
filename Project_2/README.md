@@ -4,6 +4,8 @@
 
 **Use Boston_Beer.py**
 
+**If the code doesn't work, make sure your environment variables are set up with the proper tokens for Google & Twitter's APIs.**
+
 
 **Phase 1(a):**  
 To start I copied several of the python example codes for the Twitter API v2 through their github, looking for one that was able to very generally search twitter for Tweets containing some keywords. I added my bearer token to my local environment, and made sure to not include it in a GitHub push. This ended up being "recent_search.py". Within this I customized the example to look for keywords relating to Boston, Beer, and Fall. Unfortunately the "query" parameter doesn't seem to allow for conditional logic within the keywords (i.e. Boston ∧ Beer ∧ Fall). Instead of I query "Boston Beer Fall", it returns with any Tweet containing any of these...  
@@ -27,4 +29,4 @@ I decided it would be good to add a hyperlink back to the original tweet. To do 
 
 Optimisations can be made in the search-algorithms used for this project. I have not yet studied algorithms and was more interested in communicating with the various APIs. With O(n^2) the sort used to sort the tuples is pretty slow.
 
-When running the code, one must set environment variables for Google Natural Language and for the Twitter API. This can be done for the Twitter API through line 19 of boston_beer.py, and through this [link](https://cloud.google.com/functions/docs/configuring/env-var) for Google's NLP. As always, be mindful of required libraries. Specifically Pandas, aforementioned HyperlinkManager, webbrowser, etc. All libraries can be found in the top of Boston_Beer.py.  
+When running the code, one must set environment variables for Google Natural Language and for the Twitter API. This can be done for the Twitter API through line 19 of boston_beer.py, and through this [link](https://cloud.google.com/docs/authentication/getting-started) for Google's NLP. Specifically the "Setting the environment variable" section. As always, be mindful of required libraries. Specifically Pandas, aforementioned HyperlinkManager, webbrowser, etc. All libraries can be found in the top of Boston_Beer.py.  
