@@ -8,7 +8,7 @@
 #else
 	#include "WProgram.h"
 #endif
-void PWM_Test(uint8_t pin);
+void PWM_Calibration(uint8_t gpio_pin, uint8_t min, uint8_t max);
 
 #endif
 

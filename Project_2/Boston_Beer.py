@@ -154,6 +154,7 @@ def main():
     window = tk.Tk()
     window.title("Boston Beer Buddy")
     window.geometry("1075x800")
+    window.configure(bg='white')
     S = tk.Scrollbar(window)
     T = tk.Text(window, height=len(sorted_breweries_list)*5, width=150)
     T.tag_configure('big', font=('Verdana', 16, 'bold'))
