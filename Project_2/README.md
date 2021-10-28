@@ -56,6 +56,6 @@ Tests:
 
 -Test illustrating user story. What happens as the user interacts with the program?
 
--Twitter API test. Can we get the results we want?  How much noise is there? 
+-Twitter API test. Can we get the results we want?  How much noise is there? Make a new python script (twitter_api_test.py) 
 
--Google NLP test. Enter strings to see generally what words return. What kind of sentiments do our big keywords have? Beer, brewery, hoppy, sour, ale, belgian, cider, Trillium, tequila, etc. 
+-Google NLP test. Enter strings to see generally what words return. What kind of sentiments do our big keywords have? Beer, brewery, hoppy, sour, ale, belgian, cider, Trillium, tequila, etc. Make a new google nlp script (google_nlp_test.py)
