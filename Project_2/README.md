@@ -32,4 +32,4 @@ Optimisations can be made in the search-algorithms used for this project. I have
 When running the code, one must set environment variables for Google Natural Language and for the Twitter API. This can be done for the Twitter API through line 19 of boston_beer.py, and through this [link](https://cloud.google.com/docs/authentication/getting-started) for Google's NLP. Specifically the "Setting the environment variable" section. As always, be mindful of required libraries. Specifically Pandas, aforementioned HyperlinkManager, webbrowser, etc. All libraries can be found in the top of Boston_Beer.py.  
 
 
-**Project 3a**
+**Project 3(a):**
