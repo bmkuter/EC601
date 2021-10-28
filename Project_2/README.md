@@ -7,11 +7,17 @@
 **If the code doesn't work, make sure your environment variables are set up with the proper tokens for Google & Twitter's APIs.**
 
 **User Stories**
+
 -I want to know what my current local beer scene is like!
+
 -I want a currated list of the best breweries in town.
+
 -I only want to know about breweries people have enjoyed.
+
 -I want to know about new releases! 
+
 -I want to be able to see what else the author has mentioned. 
+
 
 **MVP**
 First and foremost we will need to interact with the Twitter API and return relevant local breweries. We also need a way to sort those to find which are strongly positive. This will require Google's Natural Language AI API. Finally we need some way to display the results. A simple dark-mode GUI should suffice here, which prints the results. Each result will also contain a hyperlink back to the original Tweet. 
