@@ -44,6 +44,7 @@ When running the code, one must set environment variables for Google Natural Lan
 **Project 3(a):**
 
 Tests:
+
 -What happens if there are no results? How does the program sort in this case? What does the GUI look like?
 
 -Test illustrating user story. What happens as the user interacts with the program?
