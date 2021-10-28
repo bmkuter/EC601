@@ -6,6 +6,15 @@
 
 **If the code doesn't work, make sure your environment variables are set up with the proper tokens for Google & Twitter's APIs.**
 
+**User Stories**
+-I want to know what my current local beer scene is like!
+-I want a currated list of the best breweries in town.
+-I only want to know about breweries people have enjoyed.
+-I want to know about new releases! 
+-I want to be able to see what else the author has mentioned. 
+
+**MVP**
+First and foremost we will need to interact with the Twitter API and return relevant local breweries. We also need a way to sort those to find which are strongly positive. This will require Google's Natural Language AI API. Finally we need some way to display the results. A simple dark-mode GUI should suffice here, which prints the results. Each result will also contain a hyperlink back to the original Tweet. 
 
 **Phase 1(a):**  
 To start I copied several of the python example codes for the Twitter API v2 through their github, looking for one that was able to very generally search twitter for Tweets containing some keywords. I added my bearer token to my local environment, and made sure to not include it in a GitHub push. This ended up being "recent_search.py". Within this I customized the example to look for keywords relating to Boston, Beer, and Fall. Unfortunately the "query" parameter doesn't seem to allow for conditional logic within the keywords (i.e. Boston ∧ Beer ∧ Fall). Instead of I query "Boston Beer Fall", it returns with any Tweet containing any of these...  
@@ -33,3 +42,8 @@ When running the code, one must set environment variables for Google Natural Lan
 
 
 **Project 3(a):**
+Tests:
+-What happens if there are no results? How does the program sort in this case? What does the GUI look like?
+-Test illustrating user story. What happens as the user interacts with the program?
+-Twitter API test. Can we get the results we want?  How much noise is there? 
+-Google NLP test. Enter strings to see generally what words return. What kind of sentiments do our big keywords have? Beer, brewery, hoppy, sour, ale, belgian, cider, Trillium, tequila, etc. 
