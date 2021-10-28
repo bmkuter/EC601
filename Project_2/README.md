@@ -45,6 +45,9 @@ When running the code, one must set environment variables for Google Natural Lan
 
 Tests:
 -What happens if there are no results? How does the program sort in this case? What does the GUI look like?
+
 -Test illustrating user story. What happens as the user interacts with the program?
+
 -Twitter API test. Can we get the results we want?  How much noise is there? 
+
 -Google NLP test. Enter strings to see generally what words return. What kind of sentiments do our big keywords have? Beer, brewery, hoppy, sour, ale, belgian, cider, Trillium, tequila, etc. 
