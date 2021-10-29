@@ -13,6 +13,7 @@ import tkinter as tk
 from tkHyperLinkManager import HyperlinkManager
 import webbrowser
 from functools import partial
+import pytest
 
 
 bearer_token = os.environ.get("BEARER_TOKEN")
@@ -58,12 +59,16 @@ def connect_to_endpoint(url, params):
         raise Exception(response.status_code, response.text)
     return response.json()
 
+#Tests to see if the search returned an emnpty list
+def test_tweets():
+    no_results_response = "{'meta': {'result_count': 0}}"
+    local_tweet = connect_to_endpoint(search_url, query_params)
+    assert str(local_tweet) == no_results_response
+
 
 def main():
-    json_response = connect_to_endpoint(search_url, query_params)
-
-    print(json.dumps(json_response, indent=4, sort_keys=True))
-
+    print("Testing Twitter API via Pytest:")
+    test_tweets()
 
 if __name__ == "__main__":
     main()

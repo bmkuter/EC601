@@ -10,7 +10,7 @@
 
 -I want to know what my current local beer scene is like!
 
--I want a currated list of the best breweries in town.
+-I want a curated list of the best breweries in town.
 
 -I only want to know about breweries people have enjoyed.
 
@@ -41,7 +41,7 @@ To return the results to the user, a simple GUI is being created through Tkinter
 
 After sorting, the username is paired with the user_id through a dictionary and original query parameters. This information, as well as the various scores and original text, are packed into a tuple. This is then printed through to my simple gui.
 
-I decided it would be good to add a hyperlink back to the original tweet. To do this, I created another list for the original tweet IDs from the JSON, and appended these to the tuple for each tweet. I then created a generic twitter url ```http://www.twitter.com/anyuser/status/{}".format(x[4])``` that would take each ID and format into the proper URL. I then used a tkinter-related function found on [tutorialspoint](https://www.tutorialspoint.com/how-to-create-hyperlink-in-a-tkinter-text-widget) to insert hyperlinks into text fields instead of labels.
+I decided it would be good to add a hyperlink back to the original tweet. To do this, I created another list for the original tweet IDs from the JSON, and appended these to the tuple for each tweet. I then created a generic twitter url ```http://www.twitter.com/anyuser/status/{}".format(x[4])``` that would take each ID and format into the proper URL. I then used a tkinter-related function found on [tutorialspoint](https://www.tutorialspoint.com/how-to-create-hyperlink-in-a-tkinter-text-widget) to insert hyperlinks into text fields instead of labels. Slight modifications were made to  tkHyperLinkManager.py to improve hyperlink visibility for dark-mode.
 
 Optimisations can be made in the search-algorithms used for this project. I have not yet studied algorithms and was more interested in communicating with the various APIs. With O(n^2) the sort used to sort the tuples is pretty slow.
 
@@ -52,10 +52,10 @@ When running the code, one must set environment variables for Google Natural Lan
 
 Tests:
 
--What happens if there are no results? How does the program sort in this case? What does the GUI look like? If no results are returned, the program crashes while populating the data frame. I believe this is because is no data. To correct this, a the results JSON is compared to the known output when no results are found. If these match the terminal prints "No results!" and gracefully exits.  
+-**What happens if there are no results?:** How does the program sort in this case? What does the GUI look like? If no results are returned, the program crashes while populating the data frame. I believe this is because is no data. To correct this, a the results JSON is compared to the known output when no results are found. If these match the terminal prints "No results!" and gracefully exits. This is expanded in the Twitter API test.
 
--Test illustrating user story. What happens as the user interacts with the program?
+-**Test illustrating user story:** What happens as the user interacts with the program? The user runs the program either through the command line (python3 Boston_Beer.py) or by clicking the file. After a slight delay, the user is greeted by a simple GUI presenting recent Tweets from a curated list related to Boston Breweries sorted by general positivity through Google's natural language processing. The original tweet and user are included, as is a hyperlink back to the tweet on Twitter.
 
--Twitter API test. Can we get the results we want?  How much noise is there? When tested with (through twitter_api_test.py), we can validate that our API bearer tokens are valid and working, with the expected zero results when random noise is searched for.  
+-**Twitter API test:** Can we get the results we want?  How much noise is there? When tested with (through twitter_api_test.py), we can validate that our API bearer tokens are valid and working, with the expected zero results when random noise is searched for. If Pytest is given a negative assertion (i.e. no results were found) and results are indeed found, twitter_api_test.py will return an AssertionError.
 
--Google NLP test. Enter strings to see generally what words return. What kind of sentiments do our big keywords have? Beer, brewery, hoppy, sour, ale, belgian, cider, Trillium, tequila, etc. When testing the google api (google_api_test.py), we see expected results where the happy test string returns a high sentiment score of .9 and magnitude of .9, the bad string returns close to -1 with a magnitude of .8, and our neutral string returns a 0.0 for score and magnitude. Additionally this test shows our API key is valid and working, and the general syntax is correct. We introduced another string related to general beer terminology, which had a score of 0.5 and magnitude of 0.5, indicating that any tweets we are looking for may have an inherent positive bias.
+-**Google NLP test:** Enter strings to see generally what words return. What kind of sentiments do our big keywords have? Beer, brewery, hoppy, sour, ale, belgian, cider, Trillium, tequila, etc. When testing the google api (google_api_test.py), we see expected results where the happy test string returns a high sentiment score of .9 and magnitude of .9, the bad string returns close to -1 with a magnitude of .8, and our neutral string returns a 0.0 for score and magnitude. Additionally this test shows our API key is valid and working, and the general syntax is correct. We introduced another string related to general beer terminology, which had a score of 0.5 and magnitude of 0.5, indicating that any tweets we are looking for may have an inherent positive bias.
