@@ -59,12 +59,11 @@ def connect_to_endpoint(url, params):
         raise Exception(response.status_code, response.text)
     return response.json()
 
-#Tests to see if the search returned an emnpty list
+#Tests to see if the search returned an emnpty list, so asserts on an empty list.
 def test_tweets():
     no_results_response = "{'meta': {'result_count': 0}}"
     local_tweet = connect_to_endpoint(search_url, query_params)
     assert str(local_tweet) == no_results_response
-
 
 def main():
     print("Testing Twitter API via Pytest:")
