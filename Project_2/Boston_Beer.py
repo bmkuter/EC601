@@ -1,5 +1,6 @@
 import requests
 import os
+import sys
 import json
 # For displaying the data after
 import pandas as pd
@@ -104,6 +105,15 @@ def main():
 
     #print(json.dumps(json_response, indent=4, sort_keys=True))
     #return
+
+    no_results_response = "{'meta': {'result_count': 0}}"
+    #print(json_response)
+    #print(no_results_response)
+
+    if no_results_response == str(json_response) :
+        print ("No results!")
+        sys.exit(0)
+
 
     df = pd.DataFrame(json_response['data'])
     df.to_csv('response_python.csv')
