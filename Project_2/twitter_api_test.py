@@ -26,8 +26,7 @@ expansions = 'author_id'
 tweet_fields = 'author_id'
 user_fields = 'username,url'
 keyword ='''
-Hello World
-'''
+asdfgasdfcasezfdvsadfaews'''
 
 search_url = "https://api.twitter.com/2/tweets/search/recent"
 
